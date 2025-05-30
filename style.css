@@ -128,11 +128,40 @@ p {
 }
 
 .fotos {
-    display:flex;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 80px;
+    display:grid;
+    margin: 0 auto;
+}
+
+.vis {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+    > * {
+        flex: 0 0 100%;
+    }
+}
+
+.group {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform;
+    animation: scrolling 50s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
 
 .redesSociais {
@@ -259,10 +288,6 @@ p {
     height: 200px;
 }
 
-.fotos {
-    display: grid;
-    margin-left: 40px;
-}
 
 .container_4 {
     display: grid;
@@ -281,6 +306,10 @@ p {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
+}
+
+.group {
+    animation: scrolling 35s linear infinite;
 }
 
 }
