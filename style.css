@@ -262,6 +262,12 @@ p {
     margin-right: 100px;
 }
 
+.navegar_2 {
+    display: flex;
+    gap: 100px;
+    margin-right: 100px;
+}
+
 .scroll {
     text-decoration: none;
     color: white;
