@@ -89,6 +89,14 @@ p {
     border-top-right-radius: 800px;
 }
 
+.container_7 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0px 130px
+}
+
 .titulo {
     font-size: 50px;
 }
@@ -138,6 +146,14 @@ p {
     
 }
 
+.fotosGaleria {
+    height: 300px;
+    width: 350px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
 .carrossel {
     display: flex;
     overflow: hidden;
@@ -162,6 +178,68 @@ p {
     100% {
       transform: translateX(-100%);
     }
+}
+
+.botao {
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.botao::before {
+    content: '';
+    background: linear-gradient(45deg, #FFFF00, #FFFFE0, #fffb00, #FFD700, #F0E68C, #BA8E23, #EEAD2D, #F6B000,#FFF44F);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.botao:active {
+    color: #000
+}
+
+.botao:active:after {
+    background: transparent;
+}
+
+.botao:hover:before {
+    opacity: 1;
+}
+
+.botao:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 .redesSociais {
@@ -209,6 +287,11 @@ p {
     margin-left: 50px;
 }
 
+.botao {
+    font-size: 20px;
+}
+
+
 .icone {
 
     width: 20px;
@@ -223,6 +306,13 @@ p {
 }
 
 .navegar {
+    display: flex;
+    gap: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navegar_2 {
     display: flex;
     gap: 15px;
     margin-right: 10px;
@@ -264,6 +354,8 @@ h3 {
     border-top-right-radius: 50px;
 }
 
+
+
 .white {
     font-size: 28px;
 }
@@ -275,6 +367,8 @@ p {
 .tit {
     margin-right: 10px;
 }
+
+
 
 .closet {
     margin-left: 70px;
@@ -297,6 +391,13 @@ p {
     margin-top: 50px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
+}
+
+.container_7 {
+    justify-content: space-between;
+    margin: 10px 21px;
+    gap: 21px;
+    
 }
 
 .redesSociais {
