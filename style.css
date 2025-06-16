@@ -94,7 +94,8 @@ p {
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
-    margin: 0px 130px
+    margin: 0px 115px;
+    gap:10px;
 }
 
 .titulo {
@@ -262,7 +263,7 @@ p {
     margin-right: 100px;
 }
 
-.navegar_2 {
+.navegar_2{
     display: flex;
     gap: 100px;
     margin-right: 100px;
@@ -283,7 +284,7 @@ p {
 
 .container_1 {
     display: grid;
-    text-align: center;
+    place-items: center;
 }
 
 .iconess {
@@ -354,10 +355,7 @@ h3 {
 
 .container_3 {
     display: grid;
-    margin: 0px;
-    background-color: white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    place-items: center;
 }
 
 
@@ -377,13 +375,11 @@ p {
 
 
 .closet {
-    margin-left: 70px;
     width: 200px;
     height: 300px;
 }
 
 .cozinha {
-    margin-left: 25px;
     width: 300px;
     height: 200px;
 }
@@ -391,6 +387,7 @@ p {
 
 .container_4 {
     display: grid;
+    place-items: center;
 }
 
 .container_6 {
@@ -400,10 +397,9 @@ p {
 }
 
 .container_7 {
-    justify-content: space-between;
-    margin: 10px 21px;
-    gap: 21px;
-    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .redesSociais {
